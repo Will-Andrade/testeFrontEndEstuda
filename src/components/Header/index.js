@@ -10,7 +10,7 @@ const Container = styled.header`
     a {
         text-decoration: none;
         color: #333;
-        font-size: 2.4rem;
+        font-size: 3rem;
 
         &:hover {
             text-decoration: underline;
