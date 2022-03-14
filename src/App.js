@@ -1,16 +1,10 @@
 import { GlobalStyle } from "./GlobalStyle";
 import { Header } from "./components/Header";
-import { Route, Routes, useNavigate } from 'react-router-dom';
+import { Route, Routes } from 'react-router-dom';
 import { Classes, Students, Schools } from './pages';
 import Home from "./pages/home";
 
-function navigation() {
-
-}
-
 function App() {
-  useNavigate();
-
   return (
     <>
       <GlobalStyle />
