@@ -11,9 +11,9 @@ const Container = styled.ul`
 export function CardList() {
     return (
         <Container>
-            <Card />
-            <Card />
-            <Card />
+            <Card title="Gerenciar escolas" route="schools" />
+            <Card title="Gerenciar turmas" route="classes" />
+            <Card title="Gerenciar alunos" route="students" />
         </Container>
     );
 }

@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { Link } from 'react-router-dom';
 
 const Container = styled.div`
     a {
@@ -17,10 +18,10 @@ const Container = styled.div`
     }
 `;
 
-export function Card() {
+export function Card(props) {
     return (
         <Container>
-            <a href="/">Gerenciar algumaCoisa</a>
+            <Link to={props.route}>{props.title}</Link>
         </Container>
     );
 }

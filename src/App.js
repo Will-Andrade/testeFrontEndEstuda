@@ -1,25 +1,29 @@
 import { GlobalStyle } from "./GlobalStyle";
 import { Header } from "./components/Header";
-import { CardList } from "./components/CardList";
-import styled from 'styled-components';
+import { Route, Routes, useNavigate } from 'react-router-dom';
+import { Classes, Students, Schools } from './pages';
+import Home from "./pages/home";
 
-const Container = styled.main`
-  height: 80vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-`;
+function navigation() {
+
+}
 
 function App() {
+  useNavigate();
+
   return (
     <>
       <GlobalStyle />
       <Header />
-      <Container>
-        <CardList />
-      </Container>
+      <Routes>
+        <Route path='/' element={<Home />} />
+        <Route path='/schools' element={<Schools />} />
+        <Route path='/classes' element={<Classes />} />
+        <Route path='/students' element={<Students />} />
+      </Routes>
     </>
   );
 }
+
 
 export default App;
